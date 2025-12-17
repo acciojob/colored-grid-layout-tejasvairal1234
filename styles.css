@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+.container
+{
+	color: white;
+	font-size: 4vw;
+	display: grid;
+	gap: 5px;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto;
+	
+}
+
+.grid
+{
+	background-color: green;
+}
+
+.class1
+{
+	grid-column: 1/5;
+}
+
+.class2
+{
+	grid-row: 2/6;
+}
+
+.class4
+{
+	grid-column: 3/5;
+}
+
+.class5
+{
+	grid-column: 2/4;
+}
+
+.class10
+{
+	grid-column: 2/5;
+}
