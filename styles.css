@@ -1,43 +1,37 @@
-/*  your css code here. If applicable */
-#grid
-{
-	
-	
+/* your css code here */
+#grid {
 	display: grid;
-	gap:5px;
-	grid-template-rows: 124px 124px 124px 124px 124px;
-	grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
-	
+	gap: 5px;
+	grid-template-rows: repeat(5, 124px);
+	grid-template-columns: repeat(4, 242.5px);
 }
 
-.grid
-{
+.grid {
 	background-color: green;
 	color: white;
 	font-size: 4vw;
 }
 
-#grid div:nth-child(1)
-{
-	grid-column: 1/5;
+/* 1 spans all 4 columns */
+#grid div:nth-child(1) {
+	grid-column: span 4;
 }
 
-#grid div:nth-child(2)
-{
-	grid-row: 2/6;
+/* 2 spans 4 rows */
+#grid div:nth-child(2) {
+	grid-row: span 4;
 }
 
-#grid div:nth-child(4)
-{
-	grid-column: 3/5;
+/* 4 and 5 each span 2 columns */
+#grid div:nth-child(4) {
+	grid-column: span 2;
 }
 
-#grid div:nth-child(5)
-{
-	grid-column: 2/4;
+#grid div:nth-child(5) {
+	grid-column: span 2;
 }
 
-#grid div:nth-child(10)
-{
-	grid-column: 2/5;
+/* 10 spans 3 columns */
+#grid div:nth-child(10) {
+	grid-column: span 3;
 }
